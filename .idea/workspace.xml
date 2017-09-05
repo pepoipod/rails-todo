@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02477c70-09dd-4925-a7c1-b73d370cccd3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/dist/assets/css/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/dist/assets/css/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/dist/assets/css/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/dist/assets/css/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/dist/assets/css/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/dist/assets/css/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/css/font-awesome/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/css/font-awesome/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/css/font-awesome/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/css/font-awesome/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/css/font-awesome/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/css/font-awesome/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/css/font-awesome/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/css/font-awesome/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/css/font-awesome/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/css/font-awesome/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/css/font-awesome/_screen-reader.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/css/font-awesome/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/css/font-awesome/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/css/font-awesome/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/assets/js/_todo.js" />
-    </list>
+    <list default="true" id="02477c70-09dd-4925-a7c1-b73d370cccd3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -295,12 +272,12 @@
       <workItem from="1504577256504" duration="313000" />
       <workItem from="1504577595546" duration="9730000" />
       <workItem from="1504602000101" duration="884000" />
-      <workItem from="1504605821981" duration="1309000" />
+      <workItem from="1504605821981" duration="1356000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39756000" />
+    <option name="totallyTimeSpent" value="39803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="22" width="1634" height="989" extended-state="0" />
