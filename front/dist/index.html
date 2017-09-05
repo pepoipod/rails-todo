@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/font-awesome/font-awesome.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <script src="assets/js/vendor.pack.js"></script>
+  <script src="assets/js/index.js"></script>
+  <title>Document</title>
+</head>
+<body>
+<div class="container">
+  <main class="clearfix">
+    <aside class="side-nav">
+      <p class="profile">
+        <span><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+        <span class="name">iwamoto</span>
+        <span class="signout"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+      </p>
+
+      <ul class="fa-ul category-list">
+        <li class="open">
+          <div>
+            <i class="fa-li fa fa-home"></i>
+            <span>全て</span>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <i class="fa-li fa fa-star"></i>
+            <span>お気に入り</span>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <i class="fa-li fa fa-tasks"></i>
+            <span>カテゴリ:1</span>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <i class="fa-li fa fa-tasks"></i>
+            <span>カテゴリ:2</span>
+          </div>
+        </li>
+
+        <li class="add-category">
+          <div>
+            <i class="fa-li fa fa-plus"></i>
+            <span>カテゴリを追加</span>
+          </div>
+        </li>
+      </ul>
+    </aside>
+
+    <section class="sec-todo-list">
+      <header class="list-header">
+        <h1 class="list-title">
+          <input type="text" value="全て">
+        </h1>
+
+        <nav>
+          <div class="sort">
+            <i class="fa fa-sort"></i>
+            <span>並べ替え</span>
+          </div>
+
+          <div class="other">
+            <i class="fa fa-ellipsis-h"></i>
+          </div>
+
+          <div class="popup-menu">
+            <h2>並べ替え</h2>
+
+            <ul class="fa-ul sort">
+              <li><div>
+                <i class="fa-li fa fa-calendar-plus-o"></i>
+                <span>作成日順</span>
+              </div></li>
+
+              <li><div>
+                <i class="fa-li fa fa-calendar"></i>
+                <span>期限日順</span>
+              </div></li>
+
+              <li><div>
+                <i class="fa-li fa fa-sort-alpha-asc"></i>
+                <span>名前順</span>
+              </div></li>
+
+              <li><div>
+                <i class="fa-li fa fa-check-circle"></i>
+                <span>完了済み</span>
+              </div></li>
+            </ul>
+
+            <ul class="fa-ul other">
+              <li class="trash"><div>
+                <i class="fa-li fa fa-trash"></i>
+                <span>削除</span>
+              </div></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <nav class="sort-data">
+        <span class="info">作成日順に並べ替え済み</span>
+        <span class="type"><i class="fa fa-angle-down"></i></span>
+        <span class="close"><i class="fa fa-close"></i></span>
+      </nav>
+
+      <ul class="fa-ul tasks">
+        <li class="complete">
+          <div>
+            <i class="fa-li fa fa-check-square"></i>
+            <span>りんごを買う</span>
+          </div>
+        </li>
+
+        <li class="complete">
+          <div>
+            <i class="fa-li fa fa-check-square"></i>
+            <span>みかんを買う</span>
+          </div>
+        </li>
+
+        <li class="complete">
+          <div>
+            <i class="fa-li fa fa-check-square"></i>
+            <span>ももを買う</span>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <i class="fa-li fa fa-square-o"></i>
+            <span>かきを買う</span>
+          </div>
+        </li>
+
+        <li class="add-task">
+          <div>
+            <i class="fa-li fa fa-plus"></i>
+            <input type="text" placeholder="TODOを追加">
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <div class="task-info">
+      <header class="header">
+        <i class="fa fa-square-o"></i>
+        <input type="text" value="りんごを追加">
+      </header>
+
+      <div class="info-item expire_date">
+        <i class="fa fa-calendar"></i>
+        <input type="datetime-local">
+      </div>
+
+      <div class="info-item favorite">
+        <i class="fa fa-star-o"></i>
+        <span>お気に入りに追加</span>
+      </div>
+
+      <div class="info-item trash">
+        <i class="fa fa-trash"></i>
+        <span>削除</span>
+      </div>
+
+      <footer class="footer">
+        <p>2017/08/29 11:23に作成</p>
+      </footer>
+    </div>
+
+
+</div>
+</main>
+</div>
+</body>
+</html>
