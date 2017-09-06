@@ -71,7 +71,7 @@ export default class Todo {
       this.removeTask();
     });
 
-    // category
+    // category.
 
     $('.category-list li:not(.add-category)').on('click', (e) => {
       this.openCategory($(e.target).closest('li'));
@@ -96,8 +96,12 @@ export default class Todo {
       this.removeCategory();
     });
 
+    $('.popup-menu .other .edit-title').on('click', () => {
+      $('.sec-todo-list h1 input').focus();
+    });
 
-    // sort
+
+    // sort.
 
     $('.popup-menu .sort li').on('click', (e) => {
       this.setSort($(e.target).closest('li'));
@@ -227,9 +231,7 @@ export default class Todo {
 
   openNav(target) {
     if (this.currentMenu === target) {
-      this.$ele.popupMenu.hide();
-      this.currentMenu = '';
-
+      this.closeNav();
       return;
     }
 
@@ -254,9 +256,16 @@ export default class Todo {
     }
   }
 
+  closeNav() {
+    this.$ele.popupMenu.hide();
+    this.currentMenu = '';
+  }
+
   setSort($clicked) {
     this.$ele.sortData.show();
     this.$ele.sortData.find('.info').text($clicked.find('span').text() + 'に並べ替え済み');
+    this.closeNav();
+
   }
 
   toggleSortType() {
