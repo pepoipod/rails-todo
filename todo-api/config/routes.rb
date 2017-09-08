@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  resources :users
+  scope '/api' do
+    resources :users, except: [:index]
+    resources :categories
+  end
 end
