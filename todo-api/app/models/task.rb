@@ -13,4 +13,7 @@
 class Task < ApplicationRecord
   belongs_to :user
   belongs_to :category, optional: true
+
+  validates :title, presence: true
+  validates :user_id, presence: true
 end
