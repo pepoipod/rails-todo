@@ -7,4 +7,5 @@
 #  user_id           :integer          not null
 
 class Category < ApplicationRecord
+  has_many :tasks, dependent: :destroy
 end
