@@ -3,7 +3,7 @@
 # Table name: users
 #
 #  id                :integer          not null, primary key
-#  name              :string(20)
+#  name              :string(20)       not null, unique
 #  profile           :string(140)
 #  password_digest   :string           not null
 
