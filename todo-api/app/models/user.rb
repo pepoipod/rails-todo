@@ -11,4 +11,6 @@ class User < ApplicationRecord
   has_many :categories, dependent: :destroy
 
   has_secure_password
+
+  validates :name, presence: true
 end
