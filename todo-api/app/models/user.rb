@@ -8,6 +8,7 @@
 #  password_digest   :string           not null
 
 class User < ApplicationRecord
+  has_many :tasks, dependent: :destroy
   has_many :categories, dependent: :destroy
 
   has_secure_password

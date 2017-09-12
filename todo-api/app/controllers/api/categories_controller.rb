@@ -11,6 +11,7 @@ class Api::CategoriesController < ApplicationController
   # POST /categories
   def create
     @category = Category.new(category_params)
+    @category.user = User.find(params[:user_id])
 
     if @category.save
       render json: @category, status: :created, location: @category
@@ -41,10 +42,11 @@ class Api::CategoriesController < ApplicationController
   private
 
   def set_category
-    @category = Category.find(params[:id])
+    @user = User.find(params[:user_id])
+    @category = @user.categories.find(params[:id])
   end
 
   def category_params
-    params.require(:category).permit(:name, :user_id)
+    params.require(:category).permit(:name)
   end
 end

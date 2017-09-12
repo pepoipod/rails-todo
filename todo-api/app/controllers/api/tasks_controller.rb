@@ -12,6 +12,7 @@ class Api::TasksController < ApplicationController
   # POST /tasks
   def create
     @task = Task.new(task_params)
+    @task.user = User.find(params[:user_id])
 
     if @task.save
       render json: @task, status: :created, location: @task
@@ -42,10 +43,11 @@ class Api::TasksController < ApplicationController
   private
 
   def set_task
-    @task = Task.find(params[:id])
+    @user = User.find(params[:user_id])
+    @task = @user.tasks.find(params[:id])
   end
 
   def task_params
-    params.require(:task).permit(:title, :is_complete, :is_favorite, :expire_date, :user_id, :category_id)
+    params.require(:task).permit(:title, :is_complete, :is_favorite, :expire_date, :category_id)
   end
 end

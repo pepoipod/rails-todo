@@ -3,9 +3,10 @@ Rails.application.routes.draw do
     scope '/v1' do
       post 'user_token' => 'user_token#create'
 
-      resources :users, except: [:index]
-      resources :tasks
-      resources :categories
+      resources :users, except: [:index] , shallow: true do
+        resources :tasks
+        resources :categories
+      end
     end
   end
 end
