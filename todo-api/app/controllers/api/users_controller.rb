@@ -2,7 +2,7 @@ class Api::UsersController < ApplicationController
   before_action :authenticate_user, only: [:show, :update, :destroy]
   before_action :set_user, only: [:show, :update, :destroy]
 
-  # POST /user
+  # POST /users
   def create
     @user = User.new(user_params)
 
@@ -13,10 +13,12 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  # GET /users/:id
   def show
     render json: @user
   end
 
+  # PATCH /users/:id
   def update
     if @user.update(user_params)
       render json: @user, status: :ok, location: @user
@@ -25,6 +27,7 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  # DELETE /users/:id
   def destroy
     @user.destroy
   end
