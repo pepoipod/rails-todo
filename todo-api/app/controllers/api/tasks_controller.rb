@@ -1,4 +1,4 @@
-class TasksController < ApplicationController
+class Api::TasksController < ApplicationController
   before_action :authenticate_user
   before_action :set_task, only: [:show, :update, :destroy]
 
@@ -46,6 +46,6 @@ class TasksController < ApplicationController
   end
 
   def task_params
-    params.require(:task).permit(:title, :is_complete,  :is_favorite, :expire_date, :user_id, :category_id)
+    params.require(:task).permit(:title, :is_complete, :is_favorite, :expire_date, :user_id, :category_id)
   end
 end

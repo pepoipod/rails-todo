@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class Api::UsersController < ApplicationController
   before_action :authenticate_user, only: [:show, :update, :destroy]
   before_action :set_user, only: [:show, :update, :destroy]
 
@@ -39,3 +39,4 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name, :profile, :password, :password_confirm)
   end
 end
+
